@@ -11,7 +11,7 @@ async function main() {
 
   // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }  
-const port = 8000;
+const port = process.env.PORT || 3030;
 
 const contactFormSchema = new mongoose.Schema({
     name: String,
