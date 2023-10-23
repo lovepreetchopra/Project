@@ -1,0 +1,24 @@
+extends base.pug
+
+block style
+  style
+    include ../static/style.css
+    include ../static/styleAbout.css
+block content
+  .container
+    .content-container
+      h1 About The Dance Academy
+      .paras
+        p The Dance Academy's firm belief that 'Dancing is fun' and 'healthy' is greatly witnessed by the variety of disciplines taught in the school for all ages. The 'fun' component is instrumental in nurturing in the students a passion for dance. The professional staff play a vital role in fostering the 'fun' element in their instruction. This cultivates in the student an appreciation of dance, in its many forms, and its performance. It also encourages the student to develop poise and self confidence as well as developing an awareness of fitness, - the 'healthy' aspect of dance.
+        p further the students' development, foreign guest artists are invited annually to conduct workshops and courses in all disciplines.
+      .box1
+        .box-item
+          img(src="/static/images/d.jpg", alt="discipline") 
+        .box-item
+          img(src="/static/images/d2.jpg", alt="discipline")
+      .paras
+        p The Dance Academy, Students in classical ballet, girls and boys, can enroll as of the age of three years. The school follows the Royal Academy of Dance London Syllabus. 
+        
+block scripts
+  script(src='/static/index.js')
+  <script src="https://kit.fontawesome.com/8b54449fd8.js" crossorigin="anonymous"></script>

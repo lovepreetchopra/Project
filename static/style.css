@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(/static/images/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}    
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 20%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 30%;
+    filter: invert(1);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 30px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.nav-list li a:hover{
+    border-radius: 10px;
+    color: rgb(174, 34, 34);
+    background-color: white;
+}
+
+#intro{
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+
+#intro div.small{
+    font-size: 30px;
+}
+
+#mission{
+    height: 331px;
+    margin: auto;
+    display: block;
+    width: 67%;
+}
+
+#mission h2{
+    text-align: center;
+    padding-top: 23px;
+    font-size: 33px;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 31%;
+    margin: 23px 10px;
+    height: 238px;
+    display: inline-block;
+    background-color: #f1f1f1;
+}
+
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 152px;
+}
+
+.card-img{
+    height: 131px;
+    padding: 0 7px;
+    margin: 5px 9px;
+}
+
+.card-img img{
+    height: inherit;
+}
+
+.card-content{
+    padding: 5px;
+    margin: 3px; 
+}
+
+.card-content p{
+    font-size: 16px;
+}
+
+#sponsor{
+    height: 300px;
+    /* background-color: #f1f1f1; */
+}
+
+#sponsor h2{
+    text-align: center;
+    padding-top: 23px;
+    font-size: 33px;
+}
+
+#sponsors{
+    height: 120px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#sponsors img{
+    height: 80%;
+    margin: 10px;
+    margin-top: 45px;
+}
+
+#footer{
+    height: 69px;
+    background: black;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1365px) {
+    .card{
+        width: 30%;
+        margin: 22px 21px;
+    }
+
+    .card-img{
+        height: 93px;
+    }
+
+    #mission{
+        width: 100%;
+    }
+
+    #sponsors img{
+        height: 57%;
+        margin-left: 38px;
+    }
+}
+
+@media only screen and (max-width: 1261px) {
+    .card{
+        width: 29%;
+        margin: 22px 20px;
+    }
+
+    #sponsors img{
+        height: 46%;
+        margin-top: 74px;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 997px) {
+    #navbar{
+        flex-direction: column;
+        transition: all 2s ease;
+    }
+
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav{
+        height: 72px;
+    }
+
+    .v-nav{
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 923px) {
+    #mission{
+        height: 872px;
+    }
+
+    .card{
+        width: 77%;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-left: 75px;
+    }
+
+    .card h3{
+        font-size: 25px;
+        margin-top: 28px;
+    }
+
+    .card-img{
+        height: 143px;
+    }
+
+    .card-content{
+        margin: 70px;
+    }
+
+    .card-content p{
+        font-size: 21px;
+    }
+
+    #sponsors{
+        height: 70px;
+    }
+
+    #sponsors img{
+        height: 67%;
+        margin-right: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 669px) {
+    #intro div{
+        text-align: center;
+    }
+
+    .card{
+        margin-left: 41px;
+    }
+
+    .card-img{
+        height: 109px;
+    }
+
+    .card-content{
+        margin: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 773px) and (min-width: 357px) {
+    #sponsors{
+        height: 43px;
+    }
+
+    #footer{
+        height: 71px;
+    }
+}
+
+@media only screen and (max-width: 358px) {
+    .card-box{
+        height: 110px;
+    }
+
+    .card-img{
+        height: 80px;
+    }
+
+    .card-content p{
+        font-size: 16px;
+    }
+
+    #sponsor{
+        height: 353px;
+    }
+
+    #sponsor h2{
+        padding-top: 18px;
+    }
+
+    #sponsors{
+        height: 31px;
+    }
+
+    #sponsors img{
+        height: 70%;
+    }
+}

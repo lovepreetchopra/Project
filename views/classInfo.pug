@@ -1,0 +1,40 @@
+extends base.pug
+
+block style
+  style
+    include ../static/style.css
+    include ../static/styleClassInfo.css
+
+block content
+  .container
+    .class-container
+      h1 Our Academy Class Information
+    .class
+      .class-item
+        img(src="https://source.unsplash.com/200x200/?Dance,Classical-Ballet-dance", alt="photos")
+        h2 Dance Academy 
+        p Monthly Classes
+        p Get access to ton of classes and the world's top online dance community - with more and more being added every month!
+
+      .class-item
+        img(src="https://source.unsplash.com/200x200/?Dance,Jazz-Dance", alt="photos")
+        h2 Dance 14
+        p Beginner Program
+        p Go from zero dance experience to dancing with confidence in 14-days with this step-by-step accelerator for newer dancers!
+
+    .class
+      .class-item
+        img(src="https://source.unsplash.com/200x200/?Spanish-Dance,Dance", alt="photos")
+        h2 Shuffle Masterclass
+        p Featuring Vanesa Seco
+        p Vanesa Seco is well known for her shuffle moves on social media. Now it's time to learn the top moves directly from her! 
+
+      .class-item
+        img(src="https://source.unsplash.com/200x200/?indian-dance,Contemporary-dance,Dance", alt="photos")
+        h2 Making Viral Videos
+        p Masterclass
+        p Learn Matt's secrets to making viral dance videos that have helped him gain over 5 billion views online! 
+
+block scripts
+  script(src='/static/index.js')
+  <script src="https://kit.fontawesome.com/8b54449fd8.js" crossorigin="anonymous"></script>

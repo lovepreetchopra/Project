@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title JERRYISHU Dance Academy 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    block style
+  body
+    nav#navbar.background.h-nav 
+        ul.nav-list.v-nav 
+            .logo 
+                img(src="/static/images/logo.png", alt="logo")
+            li: a(href="/") <i class="fa-solid fa-house"></i> Home
+            li: a(href="/about") <i class="fa-solid fa-address-card"></i> About
+            li: a(href="/services") <i class="fa-brands fa-servicestack"></i> Services
+            li: a(href="/classInfo") <i class="fa-solid fa-user"></i> ClassInfo
+            li: a(href="/contact") <i class="fa-solid fa-phone"></i> Contact
+        .burger 
+            .line 
+            .line 
+            .line
+
+    block content
+    footer#footer 
+        | Copyright &copy; made by ❤️ LovepreetDanceAcademy.com | All rights reserved
+
+    block scripts

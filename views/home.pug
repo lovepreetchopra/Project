@@ -1,0 +1,50 @@
+extends base.pug
+
+block style
+    style
+      include ../static/style.css
+
+block content
+    section#intro.background 
+        div Welcome to JerryIshu's Dance Academy
+        .small Eat Sleep Dance Repeat
+
+    section#mission
+        h2 Our Missions
+        .card 
+            h3 Dance Perfection
+            .card-box
+                .card-img
+                    img(src="/static/images/1 (2).png", alt="images")
+                .card-content 
+                    p This is the best dance of the universe 
+            
+        .card 
+            h3 The way you like
+            .card-box
+                .card-img
+                    img(src="/static/images/4.png", alt="images")
+                .card-content 
+                    p Dancing makes feel happy and relaxed.
+
+        .card 
+            h3 Expert Teaching
+            .card-box
+                .card-img
+                    img(src="/static/images/3.png", alt="images")
+                .card-content 
+                    p Dance is a show art. 
+
+    section#sponsor 
+        h2 Our Sponsors 
+        #sponsors
+            img(src="/static/images/apple.png", alt="apple-logo", class="sp-img")
+            img(src="/static/images/google.png", alt="google-logo", class="sp-img")
+            img(src="/static/images/hp.png", alt="hp-logo", class="sp-img")
+            img(src="/static/images/logo2.png", alt="microsoft-logo", class="sp-img")
+            img(src="/static/images/logo5.png", alt="dell-logo", class="sp-img")
+            img(src="/static/images/skype.png", alt="skype-logo", class="sp-img")
+
+block scripts
+    script(src='/static/index.js')
+    <script src="https://kit.fontawesome.com/8b54449fd8.js" crossorigin="anonymous"></script>
